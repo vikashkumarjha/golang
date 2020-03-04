@@ -1,4 +1,4 @@
-package main
+package core
 
 import (
 	"reflect"
@@ -19,6 +19,8 @@ func main() {
 func genericMap(arr interface{}, mapFunc interface{}) interface{} {
 	funcValue := reflect.ValueOf(mapFunc)
 	arrValue := reflect.ValueOf(arr)
+
+
 
 	// Retrieve the type, and check if it is one of the array or slice.
 	arrType := arrValue.Type()
